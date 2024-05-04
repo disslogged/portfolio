@@ -16,31 +16,31 @@ const Project = ({
 }: ProjectProps) => {
   return (
     <motion.div
-      className="group border border-black rounded grid items-start grid-cols-7 gap-7 even:pl-4 shadow"
+      className="group grid grid-cols-7 items-start gap-7 rounded border border-black shadow md:even:pl-4"
       initial={{ x: index % 2 === 0 ? 100 : -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.4, delay: 0.4 }}
       viewport={{ once: true }}
     >
       {/* Project Info */}
-      <div className="col-start-1 col-end-5 pt-3 text-lightGray group-odd:col-start-4 group-odd:col-end-8">
-        <h2 className="text-2xl font-bold text-gray-800 mb-3">{title}</h2>
-        <p className="text-gray-600 text-[0.875rem] leading-normal mb-2">
+      <div className="col-start-1 col-end-8 p-4 text-lightGray md:col-start-1 md:col-end-5 md:pt-3 md:group-odd:col-start-4 md:group-odd:col-end-8">
+        <h2 className="mb-3 text-2xl font-bold text-gray-800">{title}</h2>
+        <p className="mb-2 text-[0.875rem] leading-normal text-gray-600">
           {description}
         </p>
         <strong className="text-lg font-semibold text-gray-700">
           Key Features:
         </strong>
-        <ul className="list-disc list-inside text-gray-600 text-[1rem] leading-normal mb-5">
-          {keyFeatures.map(keyF => (
+        <ul className="mb-5 list-inside list-disc text-[1rem] leading-normal text-gray-600">
+          {keyFeatures.map((keyF) => (
             <li key={keyF}>{keyF}</li>
           ))}
         </ul>
-        <ul className="text-gray-600 flex items-center flex-wrap gap-3 ">
-          {technologies.map(tech => (
+        <ul className="flex flex-wrap items-center gap-3 text-gray-600 ">
+          {technologies.map((tech) => (
             <li
               key={tech}
-              className="border border-black text-sm px-3 rounded-full group-hover:bg-black group-hover:text-white transition"
+              className="rounded-full border border-black px-3 text-sm transition group-hover:bg-black group-hover:text-white"
             >
               {tech}
             </li>
@@ -49,11 +49,11 @@ const Project = ({
       </div>
 
       {/* Project Image */}
-      <div className="col-start-5 col-end-8 group-odd:col-start-1 group-odd:col-end-4 group-odd:row-start-1 blur-[1px] group-hover:blur-0 transition duration-200 ease-in-out">
+      <div className="col-start-1 col-end-8 transition duration-200 ease-in-out group-hover:blur-0 md:col-start-5 md:col-end-8 md:blur-[1px] md:group-odd:col-start-1 md:group-odd:col-end-4 md:group-odd:row-start-1">
         <img
           src={imageUrl}
           alt="project image"
-          className="w-full object-cover h-full"
+          className="h-full w-full object-cover"
         />
       </div>
     </motion.div>

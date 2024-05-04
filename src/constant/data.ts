@@ -7,10 +7,11 @@ import { FaTelegram } from "react-icons/fa";
 
 export const headerList = [
   { id: 1, name: "Home", slug: "#home" },
-  { id: 2, name: "Projects", slug: "#projects" },
-  { id: 3, name: "Skills", slug: "#skills" },
-  { id: 4, name: "Experiences", slug: "#experiences" },
-  { id: 5, name: "Contact", slug: "#contact" },
+  { id: 2, name: "About", slug: "#about" },
+  { id: 3, name: "Projects", slug: "#projects" },
+  { id: 4, name: "Skills", slug: "#skills" },
+  { id: 5, name: "Experiences", slug: "#experiences" },
+  { id: 6, name: "Contact", slug: "#contact" },
 ];
 
 export const projectsData = [

@@ -4,7 +4,7 @@ const About = () => {
   return (
     <Section id="about">
       <h2 className="sectionTitle">About Me</h2>
-      <p className="text-lightGray text-xl text-left">
+      <p className="text-left text-[1rem] text-lightGray md:text-xl">
         Frontend developer with over two years of programming experience. Over
         the past year, I have focused extensively on React technology, achieving
         a strong command over code functionality and React concepts.

@@ -6,6 +6,9 @@ export default {
       colors: {
         lightGray: "#545454",
       },
+      screens: {
+        xs: "400px",
+      },
     },
   },
   plugins: [],

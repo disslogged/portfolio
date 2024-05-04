@@ -20,9 +20,9 @@ const Contact = () => {
         () => {
           alert("SUCCESS!");
         },
-        error => {
+        (error) => {
           alert(error.text);
-        }
+        },
       );
     setName("");
     setEmail("");
@@ -32,7 +32,7 @@ const Contact = () => {
   return (
     <Section id="contact">
       <h2 className="sectionTitle">Contact</h2>
-      <p className="text-lightGray text-[1rem] text-center mb-4">
+      <p className="mb-4 text-sm text-lightGray md:text-center md:text-[1rem]">
         please contact me directly at{" "}
         <a href="fardynmadany@gmail.com" className="text-black underline">
           fardynmadany@gmail.com
@@ -46,32 +46,32 @@ const Contact = () => {
       >
         <input
           type="text"
-          className="rounded bg-white py-1 px-4 text-lg outline-none placeholder:text-sm focus:ring-2 focus:ring-lightGray"
+          className="rounded bg-white px-4 py-1 text-lg outline-none placeholder:text-sm focus:ring-2 focus:ring-lightGray"
           placeholder="Your Name"
           name="user_name"
           value={name}
-          onChange={e => setName(e.target.value)}
+          onChange={(e) => setName(e.target.value)}
         />
         <input
           type="email"
-          className="rounded bg-white py-1 px-4 text-lg outline-none placeholder:text-sm focus:ring-2 focus:ring-lightGray"
+          className="rounded bg-white px-4 py-1 text-lg outline-none placeholder:text-sm focus:ring-2 focus:ring-lightGray"
           placeholder="Your Email"
           name="user_email"
           value={email}
-          onChange={e => setEmail(e.target.value)}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <textarea
           cols={40}
           rows={7}
-          className="rounded bg-white placeholder:text-sm py-2 px-4 outline-none focus:ring-2 focus:ring-lightGray"
+          className="rounded bg-white px-4 py-2 outline-none placeholder:text-sm focus:ring-2 focus:ring-lightGray"
           placeholder="Your message ..."
           name="message"
           value={message}
-          onChange={e => setMessage(e.target.value)}
+          onChange={(e) => setMessage(e.target.value)}
         />
         <button
           type="submit"
-          className="flex items-center gap-2 text-lg text-lightGray border border-lightGray w-max py-1 px-4 rounded hover:text-black hover:border-black transition"
+          className="flex w-max items-center gap-2 rounded border border-lightGray px-4 py-1 text-lg text-lightGray transition hover:border-black hover:text-black"
         >
           Submit <BsSendFill />
         </button>

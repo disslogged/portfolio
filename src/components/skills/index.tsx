@@ -20,7 +20,7 @@ const Skills = () => {
   return (
     <Section id="skills">
       <h2 className="sectionTitle">Skills</h2>
-      <ul className="flex flex-wrap gap-4">
+      <ul className="flex flex-wrap items-center justify-center gap-4 md:justify-start">
         {skillsData.map((skill, index: number) => (
           <motion.li
             variants={skillVariants}
@@ -28,7 +28,7 @@ const Skills = () => {
             whileInView="animate"
             custom={index}
             key={skill.id}
-            className="border-dashed border py-1 px-4 border-lightGray text-lightGray"
+            className="border border-dashed border-lightGray px-4 py-1 text-lg text-lightGray"
           >
             {skill.name}
           </motion.li>
