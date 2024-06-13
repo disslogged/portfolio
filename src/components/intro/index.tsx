@@ -26,8 +26,8 @@ const Intro = () => {
           </a>
           <a
             className="focus:shadow-outline cursor-pointer rounded border border-lightGray px-3 py-1 text-sm font-bold text-black shadow-xl transition hover:bg-black hover:text-white focus:outline-none md:px-4 md:py-2 md:text-lg"
-            download="Fardin-Madani.pdf"
-            href="../../assets/Fardin-Madani.pdf"
+            download="Fardin-Madani-1.02.pdf"
+            href="../../assets/Fardin-Madani-1.02.pdf"
           >
             Download CV
           </a>

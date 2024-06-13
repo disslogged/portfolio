@@ -76,13 +76,14 @@ export const skillsData = [
   { id: 7, name: "React" },
   { id: 8, name: "ContextAPI" },
   { id: 9, name: "Redux" },
+  { id: 9, name: "React Query" },
   { id: 10, name: "Git" },
 ];
 
 export const socialLinks = [
   {
     icon: React.createElement(FaTelegram),
-    url: "https://t.me/disslogged",
+    url: "https://t.me/far_din",
     label: "Telegram",
   },
   {

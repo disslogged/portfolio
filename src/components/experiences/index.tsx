@@ -19,55 +19,18 @@ const Experiences = () => {
             border: "1px solid black",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #000" }}
-          date="2018 - 2020"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<RiReactjsLine />}
-        >
-          <h3 className="vertical-timeline-element-title">Creative Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">Miami, FL</h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, Project
-            Management, Team Leading
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "#eae9e8",
-            color: "#000",
-            border: "1px solid black",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  #000" }}
-          date="2020 - 2022"
-          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
-          icon={<RiReactjsLine />}
-        >
-          <h3 className="vertical-timeline-element-title">Art Director</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>
-            Creative Direction, User Experience, Visual Design, SEO, Online
-            Marketing
-          </p>
-        </VerticalTimelineElement>
-        <VerticalTimelineElement
-          className="vertical-timeline-element--work"
-          contentStyle={{
-            background: "#eae9e8",
-            color: "#000",
-            border: "1px solid black",
-          }}
-          contentArrowStyle={{ borderRight: "7px solid  #000" }}
           date="2022 - 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<RiReactjsLine />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            Los Angeles, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">
+            start to self study learning
+          </h3>
+          <p>
+            "I started my learning journey with Python and Linux, and after some
+            time, I found my interest in this way and entered the frontend
+            field. React.
+          </p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
@@ -77,15 +40,21 @@ const Experiences = () => {
             border: "1px solid black",
           }}
           contentArrowStyle={{ borderRight: "7px solid  #000" }}
-          date="2023 - 2024"
+          date="2024-current"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<RiReactjsLine />}
         >
-          <h3 className="vertical-timeline-element-title">Web Designer</h3>
-          <h4 className="vertical-timeline-element-subtitle">
-            San Francisco, CA
-          </h4>
-          <p>User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">
+            Freelancer Frontend developer
+          </h3>
+          <p>
+            - creating re-useable and fully responsive components
+            <br />
+            - implementing ui features
+            <br />
+            - Integrating with APIs
+            <br />
+          </p>
         </VerticalTimelineElement>
       </VerticalTimeline>
     </section>
