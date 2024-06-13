@@ -13,10 +13,13 @@ const Project = ({
   technologies,
   title,
   index,
+  link,
 }: ProjectProps) => {
   return (
-    <motion.div
-      className="group grid grid-cols-7 items-start gap-7 rounded border border-black shadow md:even:pl-4"
+    <motion.a
+      href={link}
+      target="_blank"
+      className="group grid cursor-pointer grid-cols-7 items-start gap-7 rounded border border-black shadow md:even:pl-4"
       initial={{ x: index % 2 === 0 ? 100 : -100, opacity: 0 }}
       whileInView={{ x: 0, opacity: 1 }}
       transition={{ duration: 0.4, delay: 0.4 }}
@@ -49,14 +52,14 @@ const Project = ({
       </div>
 
       {/* Project Image */}
-      <div className="col-start-1 col-end-8 transition duration-200 ease-in-out group-hover:blur-0 md:col-start-5 md:col-end-8 md:blur-[1px] md:group-odd:col-start-1 md:group-odd:col-end-4 md:group-odd:row-start-1">
+      <div className="col-start-1 col-end-8 h-full transition duration-200 ease-in-out group-hover:blur-0 md:col-start-5 md:col-end-8 md:blur-[1px] md:group-odd:col-start-1 md:group-odd:col-end-4 md:group-odd:row-start-1">
         <img
           src={imageUrl}
           alt="project image"
           className="h-full w-full object-cover"
         />
       </div>
-    </motion.div>
+    </motion.a>
   );
 };
 

@@ -1,4 +1,7 @@
 import React from "react";
+import lastShop from "../assets/projects/lastshop.png";
+import memoryGame from "../assets/projects/memory-game.png";
+import movie from "../assets/projects/movie.png";
 
 import { FaLinkedin } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
@@ -19,78 +22,47 @@ export const projectsData = [
     id: 1,
     title: "Ecommerce Shop",
     description:
-      "Ecommerce Shop is an online marketplace designed to provide users with a seamless shopping experience. It features a wide range of products across various categories, intuitive search and filter functionality, secure checkout, and responsive design for mobile compatibility.",
+      "Ecommerce Shop is an online marketplace designed to provide users with a seamless shopping experience. It features a wide range of products across various categories, filter functionality, secure checkout, and responsive design for mobile compatibility.",
     keyFeatures: [
       "Product catalog with diverse categories",
       "Advanced search and filter options",
       "Secure checkout process with multiple payment gateways",
       "Responsive design ensures optimal viewing on all devices",
     ],
-    technologies: [
-      "React",
-      "Tailwind",
-      "Typescript",
-      "Redux",
-      "Node.js",
-      "MongoDB",
-    ],
-    imageUrl: "https://picsum.photos/700/700",
+    technologies: ["React", "Tailwind", "Typescript", "Redux", "React Query"],
+    imageUrl: lastShop,
+    link: "https://react-shop-app-five.vercel.app/",
   },
   {
     id: 2,
-    title: "Social Media Platform",
+    title: "Movie App",
     description:
-      "Social Media Platform is a platform that connects people from all over the world. It allows users to share photos, videos, and updates with their friends and followers. The platform also features messaging functionality, groups, events, and more.",
+      "Welcome to the Movie App! This is a React application that allows users to browse and explore information about movies and TV shows using the OMDB API (Open Movie Database API). Users can search for movies, view details about individual movies, and select movies to see full information.",
+    technologies: ["React", "Context", "SPA"],
     keyFeatures: [
-      "User profiles with customizable settings",
-      "News feed with algorithmic timeline",
-      "Messaging system for private communication",
-      "Groups and events for community interaction",
+      "Detailed movie information",
+      "Dynamic content loading",
+      "Favorites list",
+      "Pagination",
+      "Error handling",
+      "User reviews and ratings",
     ],
-    technologies: ["React", "Redux", "Node.js", "Express.js", "MongoDB"],
-    imageUrl: "https://picsum.photos/700/701",
+    imageUrl: movie,
+    link: "https://react-movie-app-chi-seven.vercel.app/",
   },
   {
     id: 3,
-    title: "Task Management App",
+    title: "Memory Game",
     description:
-      "Task Management App is a productivity tool designed to help users organize their tasks and projects. It features task lists, due dates, priority levels, and collaboration functionality. Users can create, assign, and track tasks with ease.",
+      "Memory Game is an interactive game designed to enhance memory skills. It tracks player turns and scores, providing a fun and challenging experience. The game features a reset button for easy restarts, responsive design, and a user-friendly interface. Players match pairs to improve their memory.",
     keyFeatures: [
-      "Task lists with drag-and-drop functionality",
-      "Due dates and priority levels for task organization",
-      "Collaboration features for team projects",
-      "User-friendly interface for easy task management",
+      "Monitors and displays player scores to promote a competitive environment.",
+      "Ensures the game works seamlessly on various devices and screen sizes.",
+      "Simple and intuitive design for an enjoyable user experience",
     ],
-    technologies: ["React", "Redux", "Firebase"],
-    imageUrl: "https://picsum.photos/700/702",
-  },
-  {
-    id: 4,
-    title: "Recipe Sharing Platform",
-    description:
-      "Recipe Sharing Platform is a community-driven platform for sharing and discovering recipes. Users can browse a vast collection of recipes, create their own recipes, and engage with other users through comments and likes. The platform also features personalized recommendations based on user preferences.",
-    keyFeatures: [
-      "Browse recipes by category or cuisine",
-      "Create and share recipes with the community",
-      "Engage with other users through comments and likes",
-      "Personalized recommendations for each user",
-    ],
-    technologies: ["React", "Node.js", "Express.js", "MongoDB"],
-    imageUrl: "https://picsum.photos/700/703",
-  },
-  {
-    id: 5,
-    title: "Fitness Tracker App",
-    description:
-      "Fitness Tracker App is a mobile application designed to help users track their fitness activities and progress. It features workout logging, goal setting, progress tracking, and personalized recommendations. Users can monitor their workouts, set goals, and stay motivated on their fitness journey.",
-    keyFeatures: [
-      "Log workouts and track activity levels",
-      "Set fitness goals and monitor progress",
-      "Receive personalized recommendations for workouts",
-      "Track nutrition and calorie intake",
-    ],
-    technologies: ["React Native", "Firebase"],
-    imageUrl: "https://picsum.photos/700/704",
+    technologies: ["React", "Typescript"],
+    imageUrl: memoryGame,
+    link: "https://react-memory-game-pi.vercel.app/",
   },
 ] as const;
 
